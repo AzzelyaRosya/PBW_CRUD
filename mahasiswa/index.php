@@ -66,6 +66,9 @@ $result = $conn->query("SELECT * FROM mahasiswa ORDER BY CAST(npm AS UNSIGNED) A
         <a href="../krs/index.php"
             style="padding: 8px 15px; background: #2196F3; color: white; text-decoration: none; border-radius: 5px; margin: 0 10px;">Ke
             KRS</a>
+        <a href="../index.php"
+            style="padding: 8px 15px; background:rgb(255, 0, 208); color: white; text-decoration: none; border-radius: 5px; margin: 0 10px;">Ke
+            Menu Utama</a>
     </div>
 </body>
 
