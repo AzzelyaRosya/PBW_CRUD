@@ -43,7 +43,7 @@ $result = $conn->query($query);
             <th>Nama Mahasiswa</th>
             <th>Mata Kuliah</th>
             <th>Keterangan</th>
-            <th>Aksi</th>
+            <!-- <th>Aksi</th> -->
         </tr>
         <?php $no = 1; while($row = $result->fetch_assoc()): ?>
         <tr>
@@ -51,13 +51,13 @@ $result = $conn->query($query);
             <td><?= $row['nama']; ?></td>
             <td><?= $row['matkul']; ?></td>
             <td><?= "$row[nama] Mengambil $row[matkul] ($row[jumlah_sks] SKS)"; ?></td>
-            <td>
+            <!-- <td>
                 <a href="edit.php?id=<?= $row['id'] ?>"
                     style="padding: 8px 15px; background:rgb(255, 153, 0); color: white; text-decoration: none; border-radius: 5px; margin: 0 10px;">Edit</a>
                 <a href="delete.php?id=<?= $row['id'] ?>"
                     style="padding: 8px 15px; background:rgb(255, 0, 0); color: white; text-decoration: none; border-radius: 5px; margin: 0 10px;"
                     onclick="return confirm('Yakin hapus?')">Hapus</a>
-            </td>
+            </td> -->
         </tr>
         <?php endwhile; ?>
     </table>
